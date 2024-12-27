@@ -44,11 +44,6 @@ class Organisation(OrganisationBase):
         orm_mode = True
 
 
-# class UserDict(BaseModel):
-#     user: User
-#     db_user_id: UUID
-
-
 class AllUsersResponse(BaseModel):
     user_id: UUID
     firstname: str
@@ -71,35 +66,13 @@ class UserOrganisationBase(BaseModel):
     roles: UserRoles
 
 
-class UserOrganisationCreate(UserOrganisationBase):
-    user_id: UUID
-    organisation_id: UUID
+# class UserOrganisationCreate(UserOrganisationBase):
+#     user_id: UUID
+#     organisation_id: UUID
 
-    class Config:
-        orm_mode = True
-
-
-class UserOrganisation(UserOrganisationBase):
-    pass
+#     class Config:
+#         orm_mode = True
 
 
-# {
-#     "status": "success",
-#     "message": "Registration successful",
-#     "data": {
-#       "accessToken": "eyJh...",
-#       "user": {
-# 	      "userId": "string",
-# 	      "firstName": "string",
-# 				"lastName": "string",
-# 				"email": "string",
-# 				"phone": "string",
-#       }
-#     }
-# }
-# Unsuccessful registration response:
-# {
-#     "status": "Bad request",
-#     "message": "Registration unsuccessful",
-#     "statusCode": 400
-# }
+# class UserOrganisation(UserOrganisationBase):
+#     pass
