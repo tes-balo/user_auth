@@ -2,7 +2,6 @@
 
 Using your most comfortable backend framework of your choice, adhere to the following acceptance:
 
-## READ CAREFULLY!!!
 
 Acceptance Criteria
 
