@@ -1,0 +1,5 @@
+[virtualenvs]
+create = true
+
+# Creates the virtual environment in thr project's directory
+in-project = true
