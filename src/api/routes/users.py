@@ -41,16 +41,3 @@ users_router = router
 )
 def get_users(db: Session = Depends(get_db)) -> list[models.User]:
     return user_service.get_users(db)
-
-
-# @router.get("/{id}", response_model=schemas.User)
-# def get_user_info(
-#     id: str,
-#     user: schemas.User = Depends(get_current_user),
-# ) -> schemas.User:
-#     if id != user.user_id:
-#         raise HTTPException(
-#             status_code=404, detail=f"User not authorized to access id no: {id}"
-#         )
-
-#     return user
